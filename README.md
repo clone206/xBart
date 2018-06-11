@@ -5,7 +5,9 @@ This software is meant to work only with audio files. It is mainly designed to h
 
 For example, your phone may only support certain audio file formats, and it may have limitations as to which sample rates it supports. If you attempt to play back an audio file with a sample rate that is too high for your phone, it may get resampled "on-the-fly" by your phone, and the results may be less than pleasing to the discerning ear. Or perhaps you have Super Audio CD (SACD) rips in DSD format (.dff or .dsf files are supported), and you want to convert them to PCM files, because you don't have a DSD-capable Digital-to-Analog Converter (DAC), and you don't want these files converted "on-the-fly" by whatever player software you're using.
 
-By default a directory is created in your home directory called "batch_resampled" (~/batch_resampled in *nix, for example), but you may want to change this by modifying the OUT_DIR constant and recompiling.
+By default a directory is created in your home directory called "batch_resampled" (~/batch_resampled in *nix, for example), but you may want to change this by modifying the OUT_DIR constant and recompiling. For example if you are working on a mac, and want the converted files automatically added to iTunes, you could set it to something like the following:
+
+"~/Music/iTunes/iTunes Media/Automatically Add to iTunes.localized/"
 
 Makes use of [javacpp-presets/ffmpeg](https://github.com/bytedeco/javacpp-presets/tree/master/ffmpeg) JNI bindings for [ffmpeg](https://www.ffmpeg.org/).
 
