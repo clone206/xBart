@@ -322,7 +322,7 @@ public class Xbart {
                         av_get_sample_fmt_name(dec_ctx.sample_fmt()).getString(), dec_ctx.channel_layout()
             )) +  "aresample=" + max_sr + (vol_boost.length() > 0 ? (",volume=" + vol_boost) : "") + ",abuffersink@out";
 
-            /* Add a graph described by a string to a graph. */
+            /* Add a graph described by a string. */
             check( avfilter_graph_parse2(filter_graph, filters_descr, inputs, outputs) );
 
             /* Get buffer contexts from parsed graph */
