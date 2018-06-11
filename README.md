@@ -1,7 +1,7 @@
 # xBart (Cross-platform Batch Audio Resampler and Transcoder) 
 A batch audio file converter/resampler, written in java.
 
-This software is meant to work only with audio files. It is mainly designed to help in situations where you have multiple lossless audio files in one or many format/sample rate(s), and you want to convert them all to one particular format/sample rate. It supports a specific target sample rate for all files, or you can set a maximum sample rate, and the closest even multiple of 44.1K or 48K below the specified maximum will be calculated and set for you.
+This software is meant to work only with audio files. It is mainly designed to help in situations where you have multiple lossless audio files in one or many format/sample rate(s), and you want to convert them all to one particular format/sample rate. It supports a specific target sample rate for all files, or you can set a maximum sample rate, and the closest even multiple of 44.1K or 48K at or below the specified maximum will be calculated and set for you.
 
 For example, your phone may only support certain audio file formats, and it may have limitations as to which sample rates it supports. If you attempt to play back an audio file with a sample rate that is too high for your phone, it may get resampled "on-the-fly" by your phone, and the results may be less than pleasing to the discerning ear. Or perhaps you have Super Audio CD (SACD) rips in DSD format (.dff or .dsf files are supported), and you want to convert them to PCM files, because you don't have a DSD-capable Digital-to-Analog Converter (DAC), and you don't want these files converted "on-the-fly" by whatever player software you're using.
 
