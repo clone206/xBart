@@ -60,7 +60,7 @@ Apple Lossless files with a maximum sample rate of 96K. Rounds down to the close
 
 ```java -jar [path_to_xbart]xbart.jar 96000m m4a```
 
-## Wonky Q & A
+## Q & A
 #### What if I add more audio files to the same directory on my computer where the already-converted files live? Since xBart is recursive, will it go through and re-convert all the files again?
 It depends. xBart tries to be smart about this. If you specify a new format/sample rate the next time you run the script, even if you use the same output directory as last time (OUT_DIR), then yes, all of the files will get converted again. The script appends a special marker to each converted file name showing what sample rate it was converted to. If you request a conversion to a certain sample rate and file type, and xBart sees that there's already a non-empty file in the specified output directory that meets the description of the requested conversion, it skips the conversion on that run. But if you're using the same settings and output directory as last time, then only the newly added files will be converted, and as usual, the directory structure from the source directory gets copied over to the output directory.
 
