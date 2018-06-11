@@ -152,7 +152,7 @@ public class Xbart {
         String dec_name = dec_ctx.codec().name().getString();
 
         /* Determine original bit depth. Explicitly set it to 24 bits if we have a DSD file as input */
-        int input_bits = ( dec_name.matches("^dsd_.*") || dec_name.equals("dst"))
+        int input_bits = (dec_name.matches("^dsd_.*") || dec_name.equals("dst"))
             ? 24
             : dec_ctx.bits_per_raw_sample();
 
